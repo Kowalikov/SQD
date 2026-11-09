@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article below."
+title: "Code and data for: Sample-based quantum diagonalization approach for open-shell transition-metal complexes in gas and implicit-solvent"
+type: software
+license: Apache-2.0
+authors:
+  - given-names: David
+    family-names: David
+  - given-names: Vedangi
+    family-names: Pathak
+  - given-names: Marek
+    family-names: Kowalik
+  - given-names: Hamed
+    family-names: Mohammadbagherpoor
+  - given-names: Vincent
+    family-names: Beltrani
+  - given-names: Kara
+    family-names: Maller
+  - given-names: Niall
+    family-names: Moroney
+  - given-names: Phalgun
+    family-names: Lolur
+preferred-citation:
+  type: article
+  title: "Sample-based quantum diagonalization approach for open-shell transition-metal complexes in gas and implicit-solvent"
+  authors:
+    - given-names: David
+      family-names: David
+    - given-names: Vedangi
+      family-names: Pathak
+    - given-names: Marek
+      family-names: Kowalik
+    - given-names: Hamed
+      family-names: Mohammadbagherpoor
+    - given-names: Vincent
+      family-names: Beltrani
+    - given-names: Kara
+      family-names: Maller
+    - given-names: Niall
+      family-names: Moroney
+    - given-names: Phalgun
+      family-names: Lolur
+  year: 2026
+  doi: "10.48550/arXiv.2607.16389"
+  url: "https://arxiv.org/abs/2607.16389"
+  repository: "arXiv"
+  identifiers:
+    - type: other
+      value: "arXiv:2607.16389"
