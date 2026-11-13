@@ -1,0 +1,146 @@
+16:40:05  INFO      Active space label: norb_25_nelec_15_15
+CPU counts:  12 | threads used by this run (PySCF + Dice):  2
+Active space label:  norb_25_nelec_15_15
+0 3 96 353
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+Default auxbasis def2-tzvp-jkfit is used for Co def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for O def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for C def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for H def2-TZVP
+16:40:14  INFO      ======================================================================
+16:40:14  INFO      SCRF ITERATION 1 / 4
+16:40:14  INFO      ======================================================================
+16:40:14  INFO        h_core: gas-phase (no solvent potential yet)
+16:40:19  INFO        ecore = -1756.0525376500 Ha
+16:40:19  INFO      30
+16:40:19  INFO      Starting HCI post-processing (25 orbitals, 15↑ + 15↓ electrons)
+16:40:19  INFO      [PASS 1] Production SHCI run: variational HCI + deterministic PT
+16:40:36  INFO      [PASS 2] <S^2>: Dice fullrestart from the pass-1 variational space, PT switched off
+16:40:36  INFO      [PASS 2] NOTE: this pass only regenerates the variational RDM; its energy is NOT the reported SHCI energy.
+16:40:37  INFO      [CLEANUP] removed FCIDUMP + Dice *.bkp files (13.2 MB), kept RDM text files in /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/0_90
+16:40:37  INFO      HCI complete in 0.3 min  │  Best E_total = -1948.4481678918 Ha
+16:40:37  INFO        <S^2> of SCRF iteration 0 (variational SHCI wavefunction, no PT):
+16:40:37  INFO      S^2 = 0.00075345
+16:40:37  INFO      S(S+1) exact = 0.00000000
+16:40:37  INFO      S^2 deviation = 7.535e-04
+16:40:37  INFO      E_var active (Dice, pass 2) = -192.3872415792
+16:40:37  INFO      E_var active from RDMs = -192.3872418534
+16:40:37  INFO      RDM energy check passed = True
+16:40:37  INFO        # <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+16:40:37  INFO        # of a PT-free fullrestart (see SHCI_output_0_90_S2.dat).
+16:40:37  INFO        E_total  = -1948.4481678918 Ha
+16:41:00  INFO        Solvent response computed: E_solv = -0.7184600349
+16:41:00  INFO      ======================================================================
+16:41:00  INFO      SCRF ITERATION 2 / 4
+16:41:00  INFO      ======================================================================
+16:41:00  INFO        h_core updated: gas-phase + V_solvent
+16:41:04  INFO        ecore = -1724.8723628749 Ha
+16:41:04  INFO      30
+16:41:04  INFO      Starting HCI post-processing (25 orbitals, 15↑ + 15↓ electrons)
+16:41:04  INFO      [PASS 1] Production SHCI run: variational HCI + deterministic PT
+16:41:20  INFO      [PASS 2] <S^2>: Dice fullrestart from the pass-1 variational space, PT switched off
+16:41:20  INFO      [PASS 2] NOTE: this pass only regenerates the variational RDM; its energy is NOT the reported SHCI energy.
+16:41:23  INFO      [CLEANUP] removed FCIDUMP + Dice *.bkp files (13.0 MB), kept RDM text files in /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/0_90
+16:41:23  INFO      HCI complete in 0.3 min  │  Best E_total = -1907.0909313326 Ha
+16:41:23  INFO        <S^2> of SCRF iteration 1 (variational SHCI wavefunction, no PT):
+16:41:23  INFO      S^2 = 0.00072226
+16:41:23  INFO      S(S+1) exact = 0.00000000
+16:41:23  INFO      S^2 deviation = 7.223e-04
+16:41:23  INFO      E_var active (Dice, pass 2) = -182.2103014881
+16:41:23  INFO      E_var active from RDMs = -182.2103014638
+16:41:23  INFO      RDM energy check passed = True
+16:41:23  INFO        # <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+16:41:23  INFO        # of a PT-free fullrestart (see SHCI_output_0_90_S2.dat).
+16:41:23  INFO        E_active = -182.2185684577
+16:41:23  INFO        E_solv   = -0.7184600349
+16:41:23  INFO        E_dup    = 41.3559442183
+16:41:23  INFO        E_total  = -1949.1653355858 Ha
+16:41:42  INFO        Solvent response computed: E_solv = -0.7208734211
+16:41:42  INFO      ======================================================================
+16:41:42  INFO      SCRF ITERATION 3 / 4
+16:41:42  INFO      ======================================================================
+16:41:42  INFO        h_core updated: gas-phase + V_solvent
+16:41:46  INFO        ecore = -1724.8061432042 Ha
+16:41:46  INFO      30
+16:41:46  INFO      Starting HCI post-processing (25 orbitals, 15↑ + 15↓ electrons)
+16:41:46  INFO      [PASS 1] Production SHCI run: variational HCI + deterministic PT
+16:42:05  INFO      [PASS 2] <S^2>: Dice fullrestart from the pass-1 variational space, PT switched off
+16:42:05  INFO      [PASS 2] NOTE: this pass only regenerates the variational RDM; its energy is NOT the reported SHCI energy.
+16:42:07  INFO      [CLEANUP] removed FCIDUMP + Dice *.bkp files (13.1 MB), kept RDM text files in /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/0_90
+16:42:07  INFO      HCI complete in 0.4 min  │  Best E_total = -1907.0130975509 Ha
+16:42:07  INFO        <S^2> of SCRF iteration 2 (variational SHCI wavefunction, no PT):
+16:42:07  INFO      S^2 = 0.00072564
+16:42:07  INFO      S(S+1) exact = 0.00000000
+16:42:07  INFO      S^2 deviation = 7.256e-04
+16:42:07  INFO      E_var active (Dice, pass 2) = -182.1986917512
+16:42:07  INFO      E_var active from RDMs = -182.1986921819
+16:42:07  INFO      RDM energy check passed = True
+16:42:07  INFO        # <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+16:42:07  INFO        # of a PT-free fullrestart (see SHCI_output_0_90_S2.dat).
+16:42:07  INFO        E_active = -182.2069543467
+16:42:08  INFO        E_solv   = -0.7208734211
+16:42:08  INFO        E_dup    = 41.4335547121
+16:42:08  INFO        E_total  = -1949.1675256842 Ha
+16:42:26  INFO        Solvent response computed: E_solv = -0.7211083137
+16:42:26  INFO      ======================================================================
+16:42:26  INFO      SCRF ITERATION 4 / 4
+16:42:26  INFO      ======================================================================
+16:42:26  INFO        h_core updated: gas-phase + V_solvent
+16:42:30  INFO        ecore = -1724.7999789774 Ha
+16:42:30  INFO      30
+16:42:30  INFO      Starting HCI post-processing (25 orbitals, 15↑ + 15↓ electrons)
+16:42:30  INFO      [PASS 1] Production SHCI run: variational HCI + deterministic PT
+16:42:46  INFO      [PASS 2] <S^2>: Dice fullrestart from the pass-1 variational space, PT switched off
+16:42:46  INFO      [PASS 2] NOTE: this pass only regenerates the variational RDM; its energy is NOT the reported SHCI energy.
+16:42:48  INFO      [CLEANUP] removed FCIDUMP + Dice *.bkp files (13.1 MB), kept RDM text files in /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/0_90
+16:42:48  INFO      HCI complete in 0.3 min  │  Best E_total = -1907.0059246801 Ha
+16:42:48  INFO        <S^2> of SCRF iteration 3 (variational SHCI wavefunction, no PT):
+16:42:48  INFO      S^2 = 0.00072276
+16:42:48  INFO      S(S+1) exact = 0.00000000
+16:42:48  INFO      S^2 deviation = 7.228e-04
+16:42:48  INFO      E_var active (Dice, pass 2) = -182.1976866174
+16:42:48  INFO      E_var active from RDMs = -182.1976862999
+16:42:48  INFO      RDM energy check passed = True
+16:42:48  INFO        # <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+16:42:48  INFO        # of a PT-free fullrestart (see SHCI_output_0_90_S2.dat).
+16:42:48  INFO        E_active = -182.2059457027
+16:42:48  INFO        E_solv   = -0.7211083137
+16:42:48  INFO        E_dup    = 41.4407041902
+16:42:48  INFO        E_total  = -1949.1677371840 Ha
+16:43:10  INFO        Solvent response computed: E_solv = -0.7211320727
+16:43:10  INFO      ======================================================================
+16:43:10  INFO      SCRF loop complete in 1.3 min  |  Final E_total = -1949.1677371840 Ha
+16:43:10  INFO      Final S^2 = 0.00072276  (S(S+1) = 0.0000, deviation 7.228e-04, RDM check passed: True) -- final SCRF iteration
+16:43:10  INFO        S^2 per SCRF iteration: 0.000753, 0.000722, 0.000726, 0.000723
+16:43:10  INFO      ======================================================================
+16:43:10  INFO      Full SCRF result history saved to data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/HCI_shift_0_90_results_raw.pkl
+16:43:10  INFO      JSON summary saved to data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/HCI_shift_0_90_results_summary.json
+16:43:10  INFO      
+================================================================================
+16:43:10  INFO        SQD IEF-PCM POST-PROCESSING SUMMARY
+16:43:10  INFO      ================================================================================
+16:43:10  INFO        Active space       : (30e, 25o)
+16:43:10  INFO        SCRF iterations    : 4
+16:43:10  INFO        Total wall time    : 1.3 min
+16:43:10  INFO      --------------------------------------------------------------------------------
+16:43:10  INFO        SCRF       E_active (Ha)        ecore (Ha)        E_total (Ha)    E_solvent (Ha)   Error (mHa)
+16:43:10  INFO      --------------------------------------------------------------------------------
+16:43:10  INFO           0     -192.3956302418  -1756.0525376500    -1948.4481678918       -0.71846003      720.5697
+16:43:10  INFO           1     -182.2185684577  -1724.8723628749    -1949.1653355858       -0.72087342        3.4021
+16:43:10  INFO           2     -182.2069543467  -1724.8061432042    -1949.1675256842       -0.72110831        1.2120
+16:43:10  INFO           3     -182.2059457027  -1724.7999789774    -1949.1677371840       -0.72113207        1.0005
+16:43:10  INFO      --------------------------------------------------------------------------------
+16:43:10  INFO        Final E_total      : -1949.1677371840 Ha
+16:43:10  INFO        Reference energy   : -1949.1687376382 Ha
+16:43:10  INFO        Final error        : 1.000454e-03 Ha  (0.6278 kcal/mol)
+16:43:10  INFO        [OK] Within chemical accuracy (1 kcal/mol ~ 1.6 mHa)
+16:43:10  INFO      
+  Approximate solvation correction: -0.719569 Ha  (-451.5362 kcal/mol)
+16:43:10  INFO        (NOTE: for a rigorous G_solv, compare to a separate gas-phase SQD calculation.)
+16:43:10  INFO      ================================================================================
+
+16:43:13  INFO      Figure saved to data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/50qubits/HCI_shift_0_90_convergence.png
+16:43:13  INFO      Done.
+<class 'pyscf.solvent._attach_solvent.PCMDFROHF'> <class 'pyscf.solvent._attach_solvent.PCMDFCASCI'> <class 'numpy.ndarray'> <class 'numpy.ndarray'> <class 'numpy.float64'>

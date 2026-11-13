@@ -1,0 +1,17 @@
+[2026-10-28 08:49:09] start
+[2026-10-28 10:23:09] n_so=34 spin=4 shift=0.0  OK  5640 s  S^2 = 6.00000338  warnings=0
+[2026-10-28 11:18:50] n_so=34 spin=4 shift=0.3  OK  3341 s  S^2 = 6.00000237  warnings=0
+[2026-10-28 12:22:55] n_so=34 spin=4 shift=1.2  OK  3845 s  S^2 = 6.00000137  warnings=0
+[2026-10-28 13:19:11] n_so=34 spin=0 shift=0.0  OK  3376 s  S^2 = 0.00000425  warnings=0
+[2026-10-28 13:35:28] n_so=34 spin=0 shift=0.3  OK  977 s  S^2 = 0.00000247  warnings=0
+[2026-10-28 13:50:59] n_so=34 spin=0 shift=1.2  OK  931 s  S^2 = 0.00000274  warnings=0
+[2026-10-28 18:14:16] start
+[2026-10-28 22:21:46] n_so=38 spin=4 shift=0.0  OK  14849 s  S^2 = 6.00000649  warnings=0
+[2026-10-29 01:43:40] n_so=38 spin=4 shift=0.3  OK  12114 s  S^2 = 6.00000853  warnings=0
+[2026-10-29 03:58:20] n_so=38 spin=4 shift=1.2  OK  8080 s  S^2 = 6.00000325  warnings=0
+[2026-10-29 05:17:53] n_so=38 spin=0 shift=0.0  OK  4773 s  S^2 = 0.00000715  warnings=0
+[2026-10-29 05:46:56] n_so=38 spin=0 shift=0.3  OK  1743 s  S^2 = 0.00000463  warnings=0
+[2026-10-29 06:03:17] n_so=38 spin=0 shift=1.2  OK  981 s  S^2 = 0.00000333  warnings=0
+[2026-10-29 10:45:47] start
+[2026-10-29 10:53:17] n_so=46 spin=4 shift=0.0  FAILED (exit 1)  450 s    warnings=0
+[2026-10-29 11:00:28] n_so=46 spin=4 shift=0.3  FAILED (exit 1)  431 s    warnings=0

@@ -1,0 +1,108 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+#system
+nocc 30
+0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 
+orbitals /content/shci/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Singlet_plus_3/50qubits/SHCI_FCIDUMP_1_20
+nroots 1
+
+#variational
+schedule
+20	1e-05
+end
+davidsonTol 5e-05
+dE 1e-08
+maxiter 26
+
+#pt
+deterministic
+epsilon2 1e-05
+epsilon2Large 1000
+targetError 0.0001
+sampleN 200
+printbestdeterminants 1
+
+#misc
+io
+prefix /content/shci/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Singlet_plus_3/50qubits/1_20
+DoOneRDM
+DoSpinOneRDM
+DoRDM
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-05        5214      -179.6489670906          9        0.45
+   1    0    1.00e-05      324077      -179.6712864602         14       27.20
+   2    0    1.00e-05     1309673      -179.6731212624         12      122.50
+   3    0    1.00e-05     1514546      -179.6731798005         10      183.92
+   4    0    1.00e-05     1535522      -179.6731818252          4      227.31
+   5    0    1.00e-05     1536172      -179.6731818713          3      268.52
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating RDM
+-300.5282888954  120.855107024096
+E from 2RDM: -179.673181871304
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0     -179.6731818713      360.59
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0     9.36355798e-01  2 2 2 2 2   2 2 2 2 2   2 2 2 2 2   0 0 0 0 0   0 0 0 0 0   
+   1    -8.65296580e-02  2 2 2 2 2   2 0 2 2 2   2 2 2 2 2   2 0 0 0 0   0 0 0 0 0   
+   2    -7.50292327e-02  2 2 2 2 2   2 2 2 2 2   2 2 2 0 2   0 0 0 2 0   0 0 0 0 0   
+   3    -7.15864945e-02  2 2 2 2 2   2 2 2 2 2   2 2 2 2 0   0 0 0 0 2   0 0 0 0 0   
+   4    -6.46225246e-02  2 2 2 2 2   0 2 2 2 2   2 2 2 2 2   2 0 0 0 0   0 0 0 0 0   
+   5    -6.44510016e-02  2 2 2 2 0   2 2 2 2 2   2 2 2 2 2   2 0 0 0 0   0 0 0 0 0   
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************
+Deterministic PT calculation converged
+epsilon2: 1e-05
+PTEnergy: -179.673182098184
+Time(s):  547.069968938828
+Now calculating PT RDM
+Writing energy -179.673182098184  to file: /content/shci/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Singlet_plus_3/50qubits/1_20/shci.e
+#0 -5.01221712942088e-10  3.3147801862949e-10
+#1 -5.54404769631908e-10  1.43748503238276e-10
+#2 -5.62216119358927e-10  8.16588854625882e-11
+
+S^2 = 0.00001561
+S(S+1) exact = 0.00000000
+S^2 deviation = 1.561e-05
+E_var active (Dice, pass 2) = -179.6731818892
+E_var active from RDMs = -179.6731819799
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_1_20_S2.dat).

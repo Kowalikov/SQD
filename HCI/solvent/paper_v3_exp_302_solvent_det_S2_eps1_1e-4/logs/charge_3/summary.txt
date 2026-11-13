@@ -1,0 +1,25 @@
+[2026-10-27 22:11:34] start
+[2026-10-27 23:16:25] n_so=50 spin=4 shift=0.3  OK  3891 s  S^2 = 6.00033221  warnings=0
+[2026-10-27 23:28:27] n_so=50 spin=4 shift=0.0  OK  4613 s  S^2 = 6.00043491  warnings=0
+[2026-10-28 00:01:36] n_so=50 spin=4 shift=1.2  OK  2711 s  S^2 = 6.00013275  warnings=0
+[2026-10-28 00:09:00] n_so=50 spin=0 shift=0.0  OK  2433 s  S^2 = 0.00025170  warnings=0
+[2026-10-28 00:27:09] n_so=50 spin=0 shift=0.3  OK  1533 s  S^2 = 0.00018385  warnings=0
+[2026-10-28 00:30:20] n_so=50 spin=0 shift=1.2  OK  1280 s  S^2 = 0.00015542  warnings=0
+[2026-10-28 01:33:03] n_so=46 spin=4 shift=0.3  OK  3763 s  S^2 = 6.00032290  warnings=0
+[2026-10-28 01:42:10] n_so=46 spin=4 shift=0.0  OK  4501 s  S^2 = 6.00039182  warnings=0
+[2026-10-28 02:06:10] n_so=46 spin=4 shift=1.2  OK  1987 s  S^2 = 6.00010557  warnings=0
+[2026-10-28 02:08:54] n_so=46 spin=0 shift=0.0  OK  1604 s  S^2 = 0.00020295  warnings=0
+[2026-10-28 02:20:18] n_so=46 spin=0 shift=1.2  OK  684 s  S^2 = 0.00011812  warnings=0
+[2026-10-28 02:20:52] n_so=46 spin=0 shift=0.3  OK  882 s  S^2 = 0.00014072  warnings=0
+[2026-10-28 02:54:20] n_so=38 spin=4 shift=0.0  OK  2042 s  S^2 = 6.00009269  warnings=0
+[2026-10-28 03:01:14] n_so=38 spin=4 shift=0.3  OK  2422 s  S^2 = 6.00015042  warnings=0
+[2026-10-28 03:09:20] n_so=38 spin=0 shift=0.0  OK  486 s  S^2 = 0.00008071  warnings=0
+[2026-10-28 03:14:00] n_so=38 spin=0 shift=0.3  OK  280 s  S^2 = 0.00007949  warnings=0
+[2026-10-28 03:17:39] n_so=38 spin=0 shift=1.2  OK  219 s  S^2 = 0.00006256  warnings=0
+[2026-10-28 03:22:31] n_so=38 spin=4 shift=1.2  OK  1691 s  S^2 = 6.00006739  warnings=0
+[2026-10-28 03:39:02] n_so=34 spin=4 shift=0.0  OK  1283 s  S^2 = 6.00004847  warnings=0
+[2026-10-28 03:40:22] n_so=34 spin=4 shift=0.3  OK  1071 s  S^2 = 6.00003751  warnings=0
+[2026-10-28 03:45:58] n_so=34 spin=0 shift=0.0  OK  336 s  S^2 = 0.00005352  warnings=0
+[2026-10-28 03:49:34] n_so=34 spin=0 shift=0.3  OK  216 s  S^2 = 0.00004727  warnings=0
+[2026-10-28 03:53:21] n_so=34 spin=0 shift=1.2  OK  227 s  S^2 = 0.00004461  warnings=0
+[2026-10-28 03:57:50] n_so=34 spin=4 shift=1.2  OK  1128 s  S^2 = 6.00004090  warnings=0

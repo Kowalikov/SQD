@@ -1,0 +1,120 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+#system
+nocc 28
+0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 1 3 5 7 9 11 13 15 17 19 21 23 
+orbitals /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-4/Quintet_plus_3/46qubits/SHCI_FCIDUMP_1_20
+nroots 1
+
+#variational
+schedule
+20	0.0001
+end
+davidsonTol 5e-05
+dE 1e-08
+maxiter 26
+
+#pt
+deterministic
+epsilon2 1e-05
+epsilon2Large 1000
+targetError 0.0001
+sampleN 200
+printbestdeterminants 1
+
+#misc
+io
+prefix /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-4/Quintet_plus_3/46qubits/1_20
+DoOneRDM
+DoSpinOneRDM
+DoRDM
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-04       11141      -132.7373669236         10        1.00
+   1    0    1.00e-04       94083      -132.7479308065         10       12.97
+   2    0    1.00e-04      105328      -132.7481576350          7       67.79
+   3    0    1.00e-04      105661      -132.7481622469          4      117.52
+   4    0    1.00e-04      105672      -132.7481623701          3      173.56
+   5    0    1.00e-04      105675      -132.7481623882          3      232.02
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating RDM
+-230.264514705311  97.5163523171208
+E from 2RDM: -132.74816238819
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0     -132.7481623882      291.68
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0     9.68251139e-01  2 2 2 2 2   2 2 2 2 2   2 2 a a a   a 0 0 0 0   0 0 0 
+   1    -5.63536649e-02  2 2 0 2 2   2 2 2 2 2   2 2 a a a   a 0 0 0 0   2 0 0 
+   2    -4.88831213e-02  2 2 2 2 2   2 0 2 2 2   2 2 a a a   a 0 0 0 0   2 0 0 
+   3    -2.87323979e-02  2 2 2 2 2   2 b 2 2 2   2 2 a a a   a 0 0 0 0   a 0 0 
+   4     2.87124990e-02  2 2 2 2 2   2 a 2 2 2   2 2 a a a   a 0 0 0 0   b 0 0 
+   5    -2.81969165e-02  2 2 2 2 2   2 2 2 2 0   2 2 a a a   a 0 0 0 2   0 0 0 
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************
+Deterministic PT calculation converged
+epsilon2: 1e-05
+PTEnergy: -132.749096685978
+Time(s):  308.504236936569
+Now calculating PT RDM
+Writing energy -132.749096685978  to file: /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-4/Quintet_plus_3/46qubits/1_20/shci.e
+#0 -1.71839231224772e-05  1.37339359690381e-05
+#1 -2.02708891787698e-05  3.10991214381386e-06
+#2 -2.0886137756142e-05  1.00430567993225e-06
+#3 -2.10781143947757e-05  3.63831897458816e-07
+#4 -2.11457999295752e-05  1.41383664603723e-07
+#5 -2.11758153534882e-05  6.20139420721359e-08
+#6 -2.11904519491931e-05  2.86432707423948e-08
+#7 -2.11970831651737e-05  1.29339261052464e-08
+#8 -2.12000596477599e-05  5.41736143427666e-09
+#9 -2.12012154163536e-05  2.17210231289122e-09
+#10 -2.12016838658937e-05  9.9343698771135e-10
+#11 -2.12018973259519e-05  5.11796039989492e-10
+#12 -2.12020107949521e-05  2.79613120220592e-10
+#13 -2.12020720091391e-05  1.40935727772107e-10
+#14 -2.12021042528356e-05  6.59554146583811e-11
+
+S^2 = 6.00010557
+S(S+1) exact = 6.00000000
+S^2 deviation = 1.056e-04
+E_var active (Dice, pass 2) = -132.7481624044
+E_var active from RDMs = -132.7481628899
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_1_20_S2.dat).

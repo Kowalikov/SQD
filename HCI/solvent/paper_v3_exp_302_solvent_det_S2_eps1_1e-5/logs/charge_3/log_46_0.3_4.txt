@@ -1,0 +1,37 @@
+10:53:31  INFO      Active space label: norb_23_nelec_16_12
+CPU counts:  12 | threads used by this run (PySCF + Dice):  12
+Active space label:  norb_23_nelec_16_12
+4 3 96 353
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+Default auxbasis def2-tzvp-jkfit is used for O def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for Co def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for H def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for C def2-TZVP
+10:53:38  INFO      ======================================================================
+10:53:38  INFO      SCRF ITERATION 1 / 4
+10:53:38  INFO      ======================================================================
+10:53:38  INFO        h_core: gas-phase (no solvent potential yet)
+10:53:41  INFO        ecore = -1793.7219452909 Ha
+10:53:41  INFO      28
+10:53:41  INFO      Starting HCI post-processing (23 orbitals, 16↑ + 12↓ electrons)
+10:53:41  INFO      [PASS 1] Production SHCI run: variational HCI + deterministic PT
+ERROR:  bash /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/dice_start_guard.sh /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_input_0_30.dat > /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_output_0_30.dat 2>&1
+<class 'pyscf.solvent._attach_solvent.PCMDFROHF'> <class 'pyscf.solvent._attach_solvent.PCMDFCASCI'> <class 'numpy.ndarray'> <class 'numpy.ndarray'> <class 'numpy.float64'>
+Traceback (most recent call last):
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/SHCI_solvent_v2.py", line 879, in <module>
+    init_qchem_info, SHCI_res, rdm1_cas = run_SHCI(mol, res, shift_fname_core, res_str, scratch_dir, spin_number)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/SHCI_solvent_v2.py", line 388, in run_SHCI
+    SHCI_res = mch.kernel(res['H1'],
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/.venv/lib/python3.11/site-packages/pyscf/shciscf/shci.py", line 980, in kernel
+    executeSHCI(self)
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/.venv/lib/python3.11/site-packages/pyscf/shciscf/shci.py", line 1422, in executeSHCI
+    raise err
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/.venv/lib/python3.11/site-packages/pyscf/shciscf/shci.py", line 1418, in executeSHCI
+    check_call(cmd, shell=True)
+  File "/home/marekowa/.local/share/uv/python/cpython-3.11.11-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command ' bash /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/dice_start_guard.sh /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_input_0_30.dat > /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_302_solvent_det_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_output_0_30.dat 2>&1' returned non-zero exit status 137.

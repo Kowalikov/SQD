@@ -1,0 +1,7 @@
+[2026-10-28 03:57:50] start
+[2026-10-28 04:01:26] n_so=34 spin=1 shift=0.3  OK  216 s  S^2 = 0.75002639  warnings=0
+[2026-10-28 04:04:08] n_so=34 spin=1 shift=0.0  OK  378 s  S^2 = 0.75005528  warnings=0
+[2026-10-28 04:04:47] n_so=34 spin=1 shift=1.2  OK  201 s  S^2 = 0.75002559  warnings=0
+[2026-10-28 04:07:43] n_so=34 spin=3 shift=0.3  OK  176 s  S^2 = 3.75001359  warnings=0
+[2026-10-28 04:07:43] n_so=34 spin=3 shift=0.0  OK  215 s  S^2 = 3.75001826  warnings=0
+[2026-10-28 04:10:25] n_so=34 spin=3 shift=1.2  OK  162 s  S^2 = 3.75001359  warnings=0

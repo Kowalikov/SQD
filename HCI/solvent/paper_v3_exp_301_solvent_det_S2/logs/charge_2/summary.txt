@@ -1,0 +1,20 @@
+[2026-10-22 14:24:17] start
+[2026-10-22 14:28:46] n_so=34 spin=1 shift=0.15  OK  269 s  S^2 = 0.75047523  warnings=0
+[2026-10-22 14:28:57] n_so=34 spin=1 shift=0.3  OK  280 s  S^2 = 0.75046331  warnings=0
+[2026-10-22 14:29:05] n_so=34 spin=1 shift=-0.15  OK  288 s  S^2 = 0.75063658  warnings=0
+[2026-10-22 14:32:37] n_so=34 spin=1 shift=0.45  OK  231 s  S^2 = 0.75044667  warnings=0
+[2026-10-22 14:32:40] n_so=34 spin=1 shift=0.75  OK  215 s  S^2 = 0.75043646  warnings=0
+[2026-10-22 14:32:42] n_so=34 spin=1 shift=0.6  OK  225 s  S^2 = 0.75045552  warnings=0
+[2026-10-22 14:36:03] n_so=34 spin=1 shift=0.9  OK  206 s  S^2 = 0.75048666  warnings=0
+[2026-10-22 14:36:11] n_so=34 spin=1 shift=1.2  OK  209 s  S^2 = 0.75048505  warnings=0
+[2026-10-22 14:36:14] n_so=34 spin=1 shift=1.05  OK  214 s  S^2 = 0.75049026  warnings=0
+[2026-10-22 14:40:44] n_so=34 spin=3 shift=-0.15  OK  281 s  S^2 = 3.75047342  warnings=0
+[2026-10-22 14:40:55] n_so=34 spin=3 shift=0.0  OK  284 s  S^2 = 3.75033192  warnings=0
+[2026-10-22 14:41:02] n_so=34 spin=3 shift=0.15  OK  288 s  S^2 = 3.75035008  warnings=0
+[2026-10-22 14:44:49] n_so=34 spin=3 shift=0.3  OK  245 s  S^2 = 3.75038587  warnings=0
+[2026-10-22 14:44:57] n_so=34 spin=3 shift=0.45  OK  242 s  S^2 = 3.75037859  warnings=0
+[2026-10-22 14:45:00] n_so=34 spin=3 shift=0.6  OK  237 s  S^2 = 3.75036713  warnings=0
+[2026-10-22 14:48:17] n_so=34 spin=3 shift=0.75  OK  208 s  S^2 = 3.75042432  warnings=0
+[2026-10-22 14:48:27] n_so=34 spin=3 shift=0.9  OK  210 s  S^2 = 3.75040432  warnings=0
+[2026-10-22 14:48:28] n_so=34 spin=3 shift=1.05  OK  208 s  S^2 = 3.75040736  warnings=0
+[2026-10-22 14:50:15] n_so=34 spin=3 shift=1.2  OK  118 s  S^2 = 3.75040433  warnings=0
