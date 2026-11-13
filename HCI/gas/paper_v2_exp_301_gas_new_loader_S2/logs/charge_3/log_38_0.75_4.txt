@@ -1,0 +1,41 @@
+/mnt/d/CapQLabBitbucket/sqd_evaluation
+CPU counts:  12
+Num electrons (alpha, beta):  14 10
+Active space label:  norb_19_nelec_14_10
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+Default auxbasis def2-tzvp-jkfit is used for H def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for O def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for C def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for Co def2-TZVP
+<class 'pyscf.df.df_jk.DFROHF'> <class 'pyscf.mcscf.df.DFCASCI'> <class 'numpy.ndarray'> <class 'numpy.ndarray'> <class 'numpy.float64'>
+
+[PASS 1] Production SHCI run: variational HCI + deterministic PT
+[PASS 1] SHCI energy (variational + PT): -1948.5169671463 Ha  (17.1 s)
+
+[PASS 2] <S^2>: Dice fullrestart from the pass-1 variational space, PT switched off
+[PASS 2] NOTE: this pass only regenerates the variational RDM; its energy is NOT the reported SHCI energy.
+
+S^2 = 6.00059719
+S(S+1) exact = 6.00000000
+S^2 deviation = 5.972e-04
+E_var (Dice, pass 2) = -1948.5097673967
+E_var from RDMs = -1948.5097671196
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_0_75_S2.dat). The energy reported
+# for this run is the PTEnergy above, not E_var.
+
+Results saved to data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/shift_0_75_results.pkl
+
+[CLEANUP] Removing large / reproducible files:
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/SHCI_FCIDUMP_0_75
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75/0-hamiltonian.bkp
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75/0-helpers.bkp
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75/0-spatialRDM.bkp
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75/0-variational.bkp
+[CLEANUP] Freed 19.1 MB. Kept RDM text files + shci.e in /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75
+  removed empty dir /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75
+  removed empty dir /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits
+Done!

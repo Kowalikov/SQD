@@ -1,0 +1,62 @@
+/mnt/d/CapQLabBitbucket/sqd_evaluation
+CPU counts:  12 | threads used by this run (PySCF + Dice):  2
+Num electrons (alpha, beta):  17 13
+Active space label:  norb_25_nelec_17_13
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+Default auxbasis def2-tzvp-jkfit is used for O def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for C def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for Co def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for H def2-TZVP
+<class 'pyscf.df.df_jk.DFROHF'> <class 'pyscf.mcscf.df.DFCASCI'> <class 'numpy.ndarray'> <class 'numpy.ndarray'> <class 'numpy.float64'>
+
+[PASS 1] Production SHCI run: variational HCI + deterministic PT
+[PASS 1] SHCI energy (variational + PT): -1948.5578876253 Ha  (757.6 s)
+
+[PASS 2] <S^2>: Dice fullrestart from the pass-1 variational space, PT switched off
+[PASS 2] NOTE: this pass only regenerates the variational RDM; its energy is NOT the reported SHCI energy.
+
+S^2 = 6.00039313
+S(S+1) exact = 6.00000000
+S^2 deviation = 3.931e-04
+E_var (Dice, pass 2) = -1948.5540348350
+E_var from RDMs = -1948.5540347975
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_0_00_S2.dat). The energy reported
+# for this run is the PTEnergy above, not E_var.
+
+Results saved to data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/shift_0_00_results.pkl
+
+[CLEANUP] Removing large / reproducible files:
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/SHCI_FCIDUMP_0_00
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/0_00/0-hamiltonian.bkp
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/0_00/0-helpers.bkp
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/0_00/0-spatialRDM.bkp
+  removed /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/0_00/0-variational.bkp
+[CLEANUP] Freed 1997.7 MB. Kept RDM text files + shci.e in /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-4/Quintet_plus_3/50qubits/0_00
+Done!
+	Command being timed: "../../../.venv/bin/python SHCI_gas_v3_new_handlers.py 0.0 4 50 3"
+	User time (seconds): 231.27
+	System time (seconds): 70.10
+	Percent of CPU this job got: 28%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:32.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5758616
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1032
+	Minor (reclaiming a frame) page faults: 2517900
+	Voluntary context switches: 4957913
+	Involuntary context switches: 551
+	Swaps: 0
+	File system inputs: 92016
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

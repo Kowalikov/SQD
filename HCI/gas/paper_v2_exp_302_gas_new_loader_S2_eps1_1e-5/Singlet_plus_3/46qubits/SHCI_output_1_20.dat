@@ -1,0 +1,107 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+#system
+nocc 28
+0 2 4 6 8 10 12 14 16 18 20 22 24 26 1 3 5 7 9 11 13 15 17 19 21 23 25 27 
+orbitals /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Singlet_plus_3/46qubits/SHCI_FCIDUMP_1_20
+nroots 1
+
+#variational
+schedule
+20	1e-05
+end
+davidsonTol 5e-05
+dE 1e-08
+maxiter 26
+
+#pt
+deterministic
+epsilon2 1e-05
+epsilon2Large 1000
+targetError 0.0001
+sampleN 200
+printbestdeterminants 1
+
+#misc
+io
+prefix /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Singlet_plus_3/46qubits/1_20
+DoOneRDM
+DoSpinOneRDM
+DoRDM
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-05        3188     -1948.4012927401          8        0.24
+   1    0    1.00e-05      141079     -1948.4265939161         13        8.14
+   2    0    1.00e-05      728086     -1948.4286334169         12       74.23
+   3    0    1.00e-05      895559     -1948.4287108177         10      243.01
+   4    0    1.00e-05      917613     -1948.4287134164          5      434.83
+   5    0    1.00e-05      918633     -1948.4287135197          3      635.53
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating RDM
+-233.801846985595  98.813681087626
+E from 2RDM: -1948.42871351971
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0    -1948.4287135197      862.83
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0    -9.39330857e-01  2 2 2 2 2   2 2 2 2 2   2 2 2 2 0   0 0 0 0 0   0 0 0 
+   1     8.70609711e-02  2 2 2 2 2   0 2 2 2 2   2 2 2 2 2   0 0 0 0 0   0 0 0 
+   2     7.23067838e-02  2 2 2 2 2   2 2 2 2 2   2 2 2 0 0   0 0 0 2 0   0 0 0 
+   3     7.23037776e-02  2 2 2 2 2   2 2 2 2 2   2 2 0 2 0   0 0 2 0 0   0 0 0 
+   4     6.48123474e-02  2 2 2 0 2   2 2 2 2 2   2 2 2 2 2   0 0 0 0 0   0 0 0 
+   5     6.48055500e-02  2 2 2 2 0   2 2 2 2 2   2 2 2 2 2   0 0 0 0 0   0 0 0 
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************
+Deterministic PT calculation converged
+epsilon2: 1e-05
+PTEnergy: -1948.42871375792
+Time(s):  936.676593065262
+Now calculating PT RDM
+Writing energy -1948.42871375792  to file: /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Singlet_plus_3/46qubits/1_20/shci.e
+#0 -1.19508230950948e-12  2.29128932367956e-15
+
+S^2 = 0.00000955
+S(S+1) exact = 0.00000000
+S^2 deviation = 9.552e-06
+E_var (Dice, pass 2) = -1948.4287135300
+E_var from RDMs = -1948.4287131055
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_1_20_S2.dat). The energy reported
+# for this run is the PTEnergy above, not E_var.

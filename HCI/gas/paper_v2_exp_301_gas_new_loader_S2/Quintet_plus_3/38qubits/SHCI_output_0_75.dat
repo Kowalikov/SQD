@@ -1,0 +1,108 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+#system
+nocc 24
+0 2 4 6 8 10 12 14 16 18 20 22 24 26 1 3 5 7 9 11 13 15 17 19 
+orbitals /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/SHCI_FCIDUMP_0_75
+nroots 1
+
+#variational
+schedule
+20	0.001
+end
+davidsonTol 5e-05
+dE 1e-08
+maxiter 26
+
+#pt
+deterministic
+epsilon2 1e-05
+epsilon2Large 1000
+targetError 0.0001
+sampleN 200
+printbestdeterminants 1
+
+#misc
+io
+prefix /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75
+DoOneRDM
+DoSpinOneRDM
+DoRDM
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-03        2806     -1948.4960953417         13        0.19
+   1    0    1.00e-03        4723     -1948.5067837238         14        0.96
+   2    0    1.00e-03        5969     -1948.5092989415         12        1.89
+   3    0    1.00e-03        6537     -1948.5097099754         14        3.12
+   4    0    1.00e-03        6620     -1948.5097557658          9        4.49
+   5    0    1.00e-03        6629     -1948.5097668611          5        5.78
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating RDM
+-208.492883729908  84.8544958445099
+E from 2RDM: -1948.50976686113
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0    -1948.5097668611        7.66
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0     9.41587571e-01  2 2 2 2 2   2 2 2 2 2   a a a a 0   0 0 0 0 
+   1     1.34069183e-01  2 2 2 a 2   2 2 2 2 2   a a 2 a 0   0 0 0 0 
+   2    -7.79979162e-02  2 2 2 a 2   2 2 2 2 2   a a b a 0   0 0 a 0 
+   3     7.41699394e-02  2 2 2 2 a   2 2 2 2 2   a a 2 a 0   0 0 0 0 
+   4    -6.37417538e-02  2 2 2 a a   2 2 2 2 2   a a 2 a b   0 0 0 0 
+   5    -6.15985958e-02  2 2 2 0 2   2 2 2 2 2   a a a a 0   0 0 2 0 
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************
+Deterministic PT calculation converged
+epsilon2: 1e-05
+PTEnergy: -1948.51696714628
+Time(s):  13.1483299732208
+Now calculating PT RDM
+Writing energy -1948.51696714628  to file: /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/38qubits/0_75/shci.e
+#0 -6.86300786128718e-07  7.36793536583707e-10
+#1 -6.86301188877526e-07  1.4470392801252e-15
+
+S^2 = 6.00059719
+S(S+1) exact = 6.00000000
+S^2 deviation = 5.972e-04
+E_var (Dice, pass 2) = -1948.5097673967
+E_var from RDMs = -1948.5097671196
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_0_75_S2.dat). The energy reported
+# for this run is the PTEnergy above, not E_var.

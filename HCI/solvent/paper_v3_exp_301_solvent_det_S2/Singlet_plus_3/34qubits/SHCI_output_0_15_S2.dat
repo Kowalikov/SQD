@@ -1,0 +1,89 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+#system
+nocc 22
+0 2 4 6 8 10 12 14 16 18 20 1 3 5 7 9 11 13 15 17 19 21 
+orbitals /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/34qubits/SHCI_FCIDUMP_0_15
+nroots 1
+
+#variational
+schedule
+0  0.001
+end
+davidsonTol 5e-05
+dE 1e-08
+maxiter 10
+fullrestart
+
+#pt
+nPTiter 0
+epsilon2 1e-05
+epsilon2Large 1000
+targetError 0.0001
+sampleN 200
+printbestdeterminants 1
+
+#misc
+io
+prefix /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/solvent/paper_v3_exp_301_solvent_det_S2/Singlet_plus_3/34qubits/0_15
+DoOneRDM
+DoSpinOneRDM
+DoRDM
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   4    0    1.00e-03        3521 -      -103.4338456791        0.17
+   0    0    1.00e-03        3521      -103.4338456791          1        0.20
+   1    0    1.00e-03        3521      -103.4338456791          1        0.36
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating RDM
+-185.674775031435  82.2409293522969
+E from 2RDM: -103.433845679138
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0     -103.4338456791        0.70
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0     9.50615692e-01  2 2 2 2 2   2 2 2 2 2   2 0 0 0 0   0 0 
+   1    -8.02987000e-02  2 2 2 2 0   2 2 2 2 2   2 2 0 0 0   0 0 
+   2    -7.15383904e-02  2 2 2 2 2   2 2 2 2 2   0 0 0 0 2   0 0 
+   3    -7.14203061e-02  2 2 2 2 2   2 2 2 2 0   2 0 0 2 0   0 0 
+   4    -6.54619276e-02  2 2 2 0 2   2 2 2 2 2   2 0 2 0 0   0 0 
+   5    -6.49011806e-02  2 2 0 2 2   2 2 2 2 2   2 0 2 0 0   0 0 
+We cannot perform PT RDM with stochastic PT. Disabling RDM.
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************

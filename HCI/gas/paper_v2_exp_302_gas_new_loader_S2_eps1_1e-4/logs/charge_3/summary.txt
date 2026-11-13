@@ -1,0 +1,24 @@
+[2026-10-27 19:57:51] start
+[2026-10-27 20:14:38] n_so=50 spin=0 shift=0.0  OK  1007 s  S^2 = 0.00024767  warnings=0
+[2026-10-27 20:20:42] n_so=50 spin=0 shift=0.3  OK  364 s  S^2 = 0.00018549  warnings=0
+[2026-10-27 20:26:41] n_so=50 spin=0 shift=1.2  OK  359 s  S^2 = 0.00015413  warnings=0
+[2026-10-27 20:51:23] n_so=50 spin=4 shift=1.2  OK  3212 s  S^2 = 6.00026264  warnings=0
+[2026-10-27 20:58:49] n_so=50 spin=4 shift=0.3  OK  3658 s  S^2 = 6.00032712  warnings=0
+[2026-10-27 21:02:24] n_so=46 spin=4 shift=0.0  OK  2143 s  S^2 = 6.00031102  warnings=0
+[2026-10-27 21:13:47] n_so=46 spin=0 shift=0.0  OK  683 s  S^2 = 0.00021382  warnings=0
+[2026-10-27 21:16:16] n_so=46 spin=4 shift=0.3  OK  1493 s  S^2 = 6.00018792  warnings=0
+[2026-10-27 21:17:48] n_so=46 spin=0 shift=0.3  OK  241 s  S^2 = 0.00014998  warnings=0
+[2026-10-27 21:18:50] n_so=46 spin=0 shift=1.2  OK  154 s  S^2 = 0.00011631  warnings=0
+[2026-10-27 21:32:22] n_so=38 spin=4 shift=0.0  OK  874 s  S^2 = 6.00016233  warnings=0
+[2026-10-27 21:51:56] n_so=38 spin=4 shift=1.2  OK  1174 s  S^2 = 6.00007381  warnings=0
+[2026-10-27 21:52:25] n_so=46 spin=4 shift=1.2  OK  3216 s  S^2 = 6.00026768  warnings=0
+[2026-10-27 21:53:58] n_so=38 spin=0 shift=0.3  OK  93 s  S^2 = 0.00008126  warnings=0
+[2026-10-27 21:54:22] n_so=38 spin=0 shift=0.0  OK  146 s  S^2 = 0.00007448  warnings=0
+[2026-10-27 21:54:42] n_so=38 spin=0 shift=1.2  OK  44 s  S^2 = 0.00006157  warnings=0
+[2026-10-27 22:00:42] n_so=38 spin=4 shift=0.3  OK  2512 s  S^2 = 6.00019865  warnings=0
+[2026-10-27 22:01:01] n_so=34 spin=4 shift=0.0  OK  399 s  S^2 = 6.00004728  warnings=0
+[2026-10-27 22:03:06] n_so=34 spin=0 shift=0.0  OK  125 s  S^2 = 0.00005803  warnings=0
+[2026-10-27 22:04:09] n_so=34 spin=0 shift=0.3  OK  63 s  S^2 = 0.00004466  warnings=0
+[2026-10-27 22:05:08] n_so=34 spin=0 shift=1.2  OK  59 s  S^2 = 0.00004068  warnings=0
+[2026-10-27 22:05:16] n_so=34 spin=4 shift=0.3  OK  634 s  S^2 = 6.00005480  warnings=0
+[2026-10-27 22:08:32] n_so=34 spin=4 shift=1.2  OK  470 s  S^2 = 6.00006422  warnings=0

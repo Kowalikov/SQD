@@ -1,0 +1,108 @@
+
+
+**************************************************************
+Dice  Copyright (C) 2017  Sandeep Sharma
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+
+Author:       Sandeep Sharma
+Contributors: James E Smith, Adam A Holmes, Bastien Mussard
+For detailed documentation on Dice please visit
+https://sanshar.github.io/Dice/
+Please visit our group page for up to date information on other projects
+http://www.colorado.edu/lab/sharmagroup/
+**************************************************************
+
+
+**************************************************************
+Input file  :
+**************************************************************
+#system
+nocc 30
+0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 1 3 5 7 9 11 13 15 17 19 21 23 25 
+orbitals /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/50qubits/SHCI_FCIDUMP_0_60
+nroots 1
+
+#variational
+schedule
+20	0.001
+end
+davidsonTol 5e-05
+dE 1e-08
+maxiter 26
+
+#pt
+deterministic
+epsilon2 1e-05
+epsilon2Large 1000
+targetError 0.0001
+sampleN 200
+printbestdeterminants 1
+
+#misc
+io
+prefix /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/50qubits/0_60
+DoOneRDM
+DoSpinOneRDM
+DoRDM
+
+
+
+
+**************************************************************
+VARIATIONAL STEP  
+**************************************************************
+Iter Root       Eps1   #Var. Det.               Energy   #Davidson     Time(s)
+   0    0    1.00e-03        7996     -1948.4853728918         12        0.72
+   1    0    1.00e-03        9142     -1948.4927780322         11        4.03
+   2    0    1.00e-03       10342     -1948.4951264610         14        7.67
+   3    0    1.00e-03       11076     -1948.4954959857         13       11.80
+   4    0    1.00e-03       11152     -1948.4955244566          7       16.11
+   5    0    1.00e-03       11156     -1948.4955264042          3       20.35
+
+Performing final tight davidson with tol: 5e-05
+
+Exiting variational iterations
+Calculating RDM
+-283.787285912223  116.763531752385
+E from 2RDM: -1948.49552640415
+VARIATIONAL CALCULATION RESULT
+------------------------------
+Root             Energy     Time(s)
+   0    -1948.4955264041       26.00
+
+
+Printing most important determinants
+ Det     weight  Determinant string
+State :0
+   0    -9.46472967e-01  2 2 2 2 2   2 2 2 2 2   2 2 2 a a   a a 0 0 0   0 0 0 0 0   
+   1     1.32666644e-01  2 2 2 2 2   a 2 2 2 2   2 2 2 a a   2 a 0 0 0   0 0 0 0 0   
+   2     6.56395323e-02  2 2 2 2 2   a 2 2 2 2   2 2 2 a a   b a 0 0 0   0 0 0 a 0   
+   3     5.77574628e-02  2 2 2 2 2   2 a 2 2 2   2 2 2 a a   2 a 0 0 0   0 0 0 0 0   
+   4    -4.67724277e-02  2 2 2 2 2   a 2 2 2 2   2 2 2 a a   b a 0 0 0   a 0 0 0 0   
+   5    -4.46984469e-02  2 2 2 2 2   a a 2 2 2   2 2 2 a a   2 a 0 b 0   0 0 0 0 0   
+
+**************************************************************
+PERTURBATION THEORY STEP  
+**************************************************************
+Deterministic PT calculation converged
+epsilon2: 1e-05
+PTEnergy: -1948.50676525864
+Time(s):  49.9212548732758
+Now calculating PT RDM
+Writing energy -1948.50676525864  to file: /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/scratch/gas/paper_v2_exp_301_gas_new_loader_S2/Quintet_plus_3/50qubits/0_60/shci.e
+#0 -1.01821161646195e-06  8.6339657123202e-10
+#1 -1.01821210013378e-06  1.28730513044724e-15
+
+S^2 = 6.00076418
+S(S+1) exact = 6.00000000
+S^2 deviation = 7.642e-04
+E_var (Dice, pass 2) = -1948.4955264041
+E_var from RDMs = -1948.4955263504
+RDM energy check passed = True
+# <S^2> of the variational SHCI wavefunction (no PT contribution), from the spin-free 2-RDM
+# of a PT-free fullrestart (see SHCI_output_0_60_S2.dat). The energy reported
+# for this run is the PTEnergy above, not E_var.

@@ -1,0 +1,28 @@
+/mnt/d/CapQLabBitbucket/sqd_evaluation
+CPU counts:  12 | threads used by this run (PySCF + Dice):  12
+Num electrons (alpha, beta):  16 12
+Active space label:  norb_23_nelec_16_12
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+Default auxbasis def2-tzvp-jkfit is used for Co def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for H def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for C def2-TZVP
+Default auxbasis def2-tzvp-jkfit is used for O def2-TZVP
+ERROR:  bash /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/dice_start_guard.sh /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_input_0_00.dat > /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_output_0_00.dat 2>&1
+<class 'pyscf.df.df_jk.DFROHF'> <class 'pyscf.mcscf.df.DFCASCI'> <class 'numpy.ndarray'> <class 'numpy.ndarray'> <class 'numpy.float64'>
+
+[PASS 1] Production SHCI run: variational HCI + deterministic PT
+Traceback (most recent call last):
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/SHCI_gas_v3_new_handlers.py", line 346, in <module>
+    SHCI_res = mch.kernel(h1e_cas,
+               ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/.venv/lib/python3.11/site-packages/pyscf/shciscf/shci.py", line 980, in kernel
+    executeSHCI(self)
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/.venv/lib/python3.11/site-packages/pyscf/shciscf/shci.py", line 1422, in executeSHCI
+    raise err
+  File "/mnt/d/CapQLabBitbucket/sqd_evaluation/.venv/lib/python3.11/site-packages/pyscf/shciscf/shci.py", line 1418, in executeSHCI
+    check_call(cmd, shell=True)
+  File "/home/marekowa/.local/share/uv/python/cpython-3.11.11-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command ' bash /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/dice_start_guard.sh /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_input_0_00.dat > /mnt/d/CapQLabBitbucket/sqd_evaluation/notebooks/analysis/SHCI/runtime/../../../../data/interim/metalloenzymes/Co_5_H2O_CO2/SHCI/def2-TZVP/AVAS/gas/paper_v2_exp_302_gas_new_loader_S2_eps1_1e-5/Quintet_plus_3/46qubits/SHCI_output_0_00.dat 2>&1' returned non-zero exit status 137.
